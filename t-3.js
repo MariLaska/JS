@@ -1,22 +1,21 @@
-function getType(type) {
-    return typeof type;
+var rand = function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
-/*function typ( x) {
-    document.writeln('undefined, number, boolean, string, object, null:');
-  
-return (x +"-"+ typeof(x)+"<br>");
-}*/
 
-// alert(typ(8));
-// alert(typ("8"));
-// alert(typ(null));
-// alert(typ(NaN));
-// alert(typ(true));
-// alert(typ(undefined));
-/*document.writeln(typ("Hello"));
-document.writeln(typ(7));
-document.writeln(typ(undefined));
-document.writeln(typ(true));
-document.writeln(typ(NaN));
-document.writeln(typ(null));*/
-document.writeln(getType("Hello"));
+function sozdaniemas(n=10) {
+    var mas = [];
+    for (var i = 0; i < n; i++) {
+        mas.push(rand(0, 100));
+    }
+    return mas ;
+}
+//mas.length
+//alert(sozdaniemas(15));
+//alert(sozdaniemas());
+//alert(sozdaniemas('df'));
+
+
+document.writeln(sozdaniemas(15)+"<br>");
+
+document.writeln(sozdaniemas());
+document.writeln(sozdaniemas('fcgc'));
