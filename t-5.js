@@ -12,4 +12,4 @@ function arrOfStudents(str) {
 let str = 'Настя пропустила пару. Валера и Сергей вообще не ходят. А Таня всегда опаздывает.';
 
  let a = arrOfStudents(str);
-document.writeln(a); // + "<br>");
+document.writeln(a);
